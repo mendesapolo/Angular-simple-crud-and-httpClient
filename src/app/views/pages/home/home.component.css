@@ -1,0 +1,21 @@
+.mr-4{
+  margin-right: 10px;
+}
+
+.badge-green{
+  color: white !important;
+  background-color: rgb(6, 94, 6) !important;
+  padding: 3px;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 0.4rem;
+}
+
+.badge-red{
+  color: white !important;
+  background-color: rgb(148, 11, 11) !important;
+  padding: 3px;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 0.4rem;
+}

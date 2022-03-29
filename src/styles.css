@@ -1,1 +1,179 @@
-/* You can add global styles to this file, and also import other style files */
+body,
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #1c273b;
+}
+
+header div.logo {
+  display: block;
+  float: left;
+}
+header div.logo span {
+  font-size: 35px;
+  color: #0799dd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+header div.search-form {
+  display: block;
+  float: right;
+  width: 500px;
+  height: 38px;
+  margin-right: 20%;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+
+/*#E6E6E6 */
+header div.search-form button {
+  display: block;
+  height: 38px;
+  width: 40px;
+  float: right;
+  border: 1px solid #ffffff;
+  border-radius: 0.2rem;
+  background: #c7c7c7;
+}
+
+header div.search-form input.btn-search {
+  display: inline-block;
+  height: 34px;
+  width: 89%;
+  border: none;
+  border-radius: 0.2rem;
+  background: rgba(0, 0, 0, 0);
+  font: 14pt x-large arial, sans-serif;
+  outline: none;
+}
+
+section.content {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  padding: 7px;
+}
+
+section.content .form-create-update {
+  width: 100%;
+  padding: 20px 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input[type="text"].form-control,
+input[type="number"].form-control,
+select {
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding: 3px;
+  padding-left: 7px;
+  font: 14pt/13pt bold arial, sans-serif;
+  border-radius: 0.2rem;
+  box-shadow: -1px -1px 3px, 1px 1px 3px;
+  color: #1c273b;
+}
+
+select.form-control {
+  height: 45px !important;
+}
+
+div.form-group span {
+  font: 13pt arial, sans-serif;
+}
+.btn {
+  padding: 5px;
+  height: 47px;
+  min-width: 50px;
+  border: 1px solid gray;
+  background: rgba(0, 0, 0, 0);
+  font-size: x-large;
+  color: #1c273b;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 3px #00000059, inset -1px -1px 3px #00000059;
+  border: 1px dotted white;
+}
+
+.btn-sm {
+  min-width: 37px;
+  height: 37px;
+  font-size: medium;
+}
+
+.btn-marrom {
+  background-color: #1c273b !important;
+  color: white !important;
+}
+
+.btn-yellow {
+  background-color: #0799dd !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn-red {
+  background-color: #d60505 !important;
+  color: black !important;
+}
+
+.form-group {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-items: stretch;
+  margin: 0 10px;
+}
+
+div.table-list {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+table {
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+table thead tr {
+  padding: 4px;
+  height: 50px;
+  font: 14px bold arial, sans-serif;
+  border-bottom: 2px solid #1c273b;
+}
+
+table thead tr th {
+  padding: 5px;
+  vertical-align: bottom;
+  font: medium bold arial, sans-serif;
+}
+table tbody tr:nth-of-type(odd) {
+  background-color: #8c98afe0;
+  color: white;
+}
+table tbody tr td {
+  padding: 5px;
+  font: medium bold arial, sans-serif;
+}
+table tbody {
+  padding: 5px;
+  font: medium bold arial, sans-serif;
+}

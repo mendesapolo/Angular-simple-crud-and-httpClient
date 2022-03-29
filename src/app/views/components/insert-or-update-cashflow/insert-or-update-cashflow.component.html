@@ -1,0 +1,24 @@
+<div class="form-create-update">
+  <form [formGroup]="form" (submit)="onSubmit(form.value)">
+    <div class="form-group">
+      <input type="text" class="form-control" formControlName="descricao"  [(ngModel)]="cashflow.descricao" placeholder="Designação">
+    </div>
+    <div class="form-group">
+      <input type="number" class="form-control" formControlName="valor" [(ngModel)]="cashflow.valor" placeholder="Valor">
+    </div>
+    <div class="form-group" style="clear: both;">
+      <select formControlName="is_entrada" id="is_entrada" class="form-control" [(ngModel)]="cashflow.is_entrada">
+        <option value="1">Entrada</option>
+        <option value="0">Saida</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-marrom" type="submit">{{ cashflow.id? 'Salvar': '+'}}</button>
+    </div>
+    <div *ngIf="cashflow.id" class="form-group">
+      <button (click)="reset()" class="btn btn-yellow" type="button">-</button>
+    </div>
+  </form>
+</div>
+<p style="text-align: center; color: red;" *ngIf="!this.valid">Preencha todos os campos</p>
+<p style="text-align: center; color: green;" *ngIf="saved">Salvado com sucesso</p>
